@@ -1,6 +1,3 @@
-<?php $socials = config('socials'); ?>
-
-
 <footer>
 
     <div class="top-footer">
@@ -63,16 +60,42 @@
             <div class="social">
                 <h2>FOLLOW US</h2>
                 <ul>
-                    @foreach ($socials as $social)
-                        <li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="{{ @Vite::asset('resources/img/footer-facebook.png') }}">
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="{{ @Vite::asset('resources/img/footer-periscope.png') }}">
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="{{ @Vite::asset('resources/img/footer-pinterest.png') }}">
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="{{ @Vite::asset('resources/img/footer-twitter.png') }}">
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="{{ @Vite::asset('resources/img/footer-youtube.png') }}">
+                            </figure>
+                        </a>
+                    </li>
 
-                            <a href="#">
-                                <figure>
-                                    <img src="{{ @Vite::asset("resources/img/{$social['picture']}") }}">
-                                </figure>
-                            </a>
-                        </li>
-                    @endforeach
 
                 </ul>
             </div>
