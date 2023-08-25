@@ -38,6 +38,8 @@ class ComicController extends Controller
     public function show(Comic $comic)
     {
         //
+        $comic = Comic::find($comic)->get();
+        return view('show', compact('comic'));
     }
 
     /**
