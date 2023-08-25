@@ -18,10 +18,14 @@
 
 <body>
 
+    @include('includes.header')
+
     <main class="bg-light">
         <h1>ciao</h1>
         @yield('main-content')
     </main>
+
+    @include('includes.footer')
 
 </body>
 
