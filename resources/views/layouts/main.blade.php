@@ -20,8 +20,9 @@
 
     @include('includes.header')
 
-    <main class="bg-light">
-        <h1>ciao</h1>
+
+    <main>
+        @include('includes.jumbotron')
         @yield('main-content')
     </main>
 
