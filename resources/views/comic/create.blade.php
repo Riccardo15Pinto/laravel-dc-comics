@@ -3,6 +3,12 @@
 @section('title', 'create')
 
 
+@section('item')
+    <div class="flag">
+        CURRENT SERIES
+    </div>
+@endsection
+
 @section('main-content')
     <h1>create</h1>
     <form action="{{ route('comics.store') }}" method="Post">
