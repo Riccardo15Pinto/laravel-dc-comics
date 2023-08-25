@@ -1,0 +1,27 @@
+.jumbo-section {
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+
+    .flag {
+        text-align: center;
+        width: 185px;
+        background-color: #0282F9;
+        padding: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        position: relative;
+        top: 95%;
+        left: 16%;
+    }
+
+    .flag-detail{
+        border: 2px solid #0282F9;
+        width: 185px;
+        position: relative;
+        top: 46%;
+        left: 19%;
+    }
+   
+}

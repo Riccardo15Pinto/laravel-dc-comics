@@ -1,0 +1,25 @@
+header {
+    .figure-image{
+        width: 100px;
+    }
+
+
+    ul {
+      
+        li {
+            
+            a {
+                font-weight: 600;
+                text-transform: uppercase;
+                color: black;
+                padding: 73px 0;
+
+                &:hover,
+                &.active {
+                    color: #0C7CEC;
+                    border-bottom: 3px solid currentColor;
+                }
+            }
+        }
+    }
+}
