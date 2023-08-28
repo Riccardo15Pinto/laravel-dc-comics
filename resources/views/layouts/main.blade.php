@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <title> {{ env('APP_NAME') }} | @yield('title')</title>
+    <title> DC Comics | @yield('title')</title>
 
     <!-- Styles -->
     @vite('resources/js/app.js')
