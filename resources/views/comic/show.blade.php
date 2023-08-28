@@ -96,6 +96,8 @@
                         </ul>
                     </div>
                 </div>
+
+                <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning">Modifica</a>
             </div>
         </div>
 
