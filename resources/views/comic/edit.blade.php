@@ -6,7 +6,7 @@
     <div class="container">
 
         <h1 class="my-3 text-center text-primary">Edit comic</h1>
-        <form action="{{ route('comics.store') }}" method="Post" class="form my-3">
+        <form action="{{ route('comics.update', $comic) }}" method="Post" class="form my-3">
             @method('put')
             @csrf
             <div class="mb-3">
