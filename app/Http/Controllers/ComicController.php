@@ -62,6 +62,22 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+
+        $request->validate([
+            'title' => 'string',
+            'description' => 'string',
+            'thumb' => 'string|url:http,https',
+            'price' => 'string',
+            'series' => 'string',
+            'sale_date ' => 'date',
+            'type ' => 'string',
+            'artists' => 'string',
+            'writers' => 'string',
+        ], [
+            'string' => 'Il campo non può essere vuoto',
+            'thumb.url' => 'Il campo può contenere solo file :attribute'
+        ]);
+
         $data = $request->all();
         $comic->update($data);
         return to_route('comics.show', $comic);
