@@ -5,7 +5,7 @@
             <div class="column">
                 <div>
                     <h3><a href="#">DC COMICS</a></h3>
-                    <ul>
+                    <ul class="ps-0">
                         <li><a href="#">Characters</a></li>
                         <li><a href="#">Comics</a></li>
                         <li><a href="#">Movies</a></li>
@@ -17,7 +17,7 @@
                 </div>
                 <div>
                     <h3><a href="#">SHOP</a></h3>
-                    <ul>
+                    <ul class="ps-0">
                         <li><a href="#">Shop DC</a></li>
                         <li><a href="#">Shop DC Collectibles</a></li>
                     </ul>
@@ -26,7 +26,7 @@
             </div>
             <div class="column">
                 <h3><a href="#">DC</a></h3>
-                <ul>
+                <ul class="ps-0">
                     <li><a href="#">Terms Of Use</a></li>
                     <li><a href="#">Privacy Policy(New)</a></li>
                     <li><a href="#">Ad Choices</a></li>
@@ -42,7 +42,7 @@
             </div>
             <div class="column">
                 <h3><a href="#">SITIES</a></h3>
-                <ul>
+                <ul class="ps-0">
                     <li><a href="#">DC</a></li>
                     <li><a href="#">MAD Magazine</a></li>
                     <li><a href="#">DC Kids</a></li>
@@ -59,7 +59,7 @@
             <a href="#" class="button">SING-UP NOW!</a>
             <div class="social">
                 <h2>FOLLOW US</h2>
-                <ul>
+                <ul class="ps-0">
                     <li>
                         <a href="#">
                             <figure>
