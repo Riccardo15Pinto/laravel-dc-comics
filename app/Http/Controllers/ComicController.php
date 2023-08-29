@@ -31,18 +31,26 @@ class ComicController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'string',
-            'description' => 'string',
-            'thumb' => 'string|url:http,https',
-            'price' => 'string',
-            'series' => 'string',
-            'sale_date ' => 'date',
-            'type ' => 'string',
-            'artists' => 'string',
-            'writers' => 'string',
+            'title' => 'required|string',
+            'description' => 'required|string',
+            'thumb' => 'required|string|url:http,https',
+            'price' => 'required|string',
+            'series' => 'requiredstring',
+            'sale_date ' => 'required|date',
+            'type ' => 'required|string',
+            'artists' => 'required|string',
+            'writers' => 'required|string',
         ], [
-            'string' => 'Il campo non può essere vuoto',
-            'thumb.url' => 'Il campo può contenere solo file: (http , https)'
+            'thumb.url' => 'Il campo può contenere solo file: (http , https)',
+            'title.required' => 'Il campo deve contenere il titolo',
+            'description.required' => 'Il campo deve contenere la descrizione',
+            'thumb.required' => 'Il campo deve contenere un file per la copertina del fumetto',
+            'price.required' => 'Il campo deve contenere il prezzo',
+            'series.required' => 'Il campo deve contenere il prezzo',
+            'sale_date.required' => 'Il campo deve contenere la data di pubblicazione',
+            'type.required' => 'Il campo deve contenere il la tipologia del fumetto',
+            'artists.required' => 'Il campo deve contenere gli artisti',
+            'writers.required' => 'Il campo deve contenere gli scrittori'
         ]);
 
         $data = $request->all();
@@ -79,18 +87,26 @@ class ComicController extends Controller
     {
 
         $request->validate([
-            'title' => 'string',
-            'description' => 'string',
-            'thumb' => 'string|url:http,https',
-            'price' => 'string',
-            'series' => 'string',
-            'sale_date ' => 'date',
-            'type ' => 'string',
-            'artists' => 'string',
-            'writers' => 'string',
+            'title' => 'required|string',
+            'description' => 'required|string',
+            'thumb' => 'required|string|url:http,https',
+            'price' => 'required|string',
+            'series' => 'requiredstring',
+            'sale_date ' => 'required|date',
+            'type ' => 'required|string',
+            'artists' => 'required|string',
+            'writers' => 'required|string',
         ], [
-            'string' => 'Il campo non può essere vuoto',
-            'thumb.url' => 'Il campo può contenere solo file: (http , https)'
+            'thumb.url' => 'Il campo può contenere solo file: (http , https)',
+            'title.required' => 'Il campo deve contenere il titolo',
+            'description.required' => 'Il campo deve contenere la descrizione',
+            'thumb.required' => 'Il campo deve contenere un file per la copertina del fumetto',
+            'price.required' => 'Il campo deve contenere il prezzo',
+            'series.required' => 'Il campo deve contenere il prezzo',
+            'sale_date.required' => 'Il campo deve contenere la data di pubblicazione',
+            'type.required' => 'Il campo deve contenere il la tipologia del fumetto',
+            'artists.required' => 'Il campo deve contenere gli artisti',
+            'writers.required' => 'Il campo deve contenere gli scrittori'
         ]);
 
         $data = $request->all();
