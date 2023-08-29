@@ -1,6 +1,6 @@
 <header class="bg-primary-subtle">
 
-    <div class="row align-items-center">
+    <div class="row align-items-center m-0">
         <div class="col-3">
             <a href="{{ route('comics.index') }}">
                 <figure class="figure-image">

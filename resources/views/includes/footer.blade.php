@@ -59,7 +59,7 @@
             <a href="#" class="button">SING-UP NOW!</a>
             <div class="social">
                 <h2>FOLLOW US</h2>
-                <ul class="ps-0">
+                <ul class="ps-0 mb-0">
                     <li>
                         <a href="#">
                             <figure>
