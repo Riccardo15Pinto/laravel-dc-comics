@@ -97,7 +97,15 @@
                     </div>
                 </div>
 
-                <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning">Modifica</a>
+                <div class="d-flex justify-content-end align-items-center">
+                    <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning me-3">Modifica</a>
+
+                    <form action="{{ route('comics.destroy', $comic) }}" method="Post">
+                        @method('delete')
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Cancella</button>
+                    </form>
+                </div>
             </div>
         </div>
 
