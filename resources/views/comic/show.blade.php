@@ -100,7 +100,8 @@
                 <div class="d-flex justify-content-end align-items-center">
                     <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning me-3">Modifica</a>
 
-                    <form action="{{ route('comics.destroy', $comic) }}" method="Post">
+                    <form action="{{ route('comics.destroy', $comic) }}" method="Post" class="delete-form"
+                        data-name="{{ $comic->title }}">
                         @method('delete')
                         @csrf
                         <button type="submit" class="btn btn-danger">Cancella</button>
@@ -110,4 +111,8 @@
         </div>
 
     </section>
+@endsection
+
+@section('scripts')
+    @vite('resources/js/scripts/form-delete.js')
 @endsection
