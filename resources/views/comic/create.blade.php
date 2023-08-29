@@ -68,7 +68,8 @@
                     @enderror
                 </div>
                 <div class="col-4">
-                    <img src="{{ old('thumb', 'https://previews.123rf.com/images/kaymosk/kaymosk1804/kaymosk180400006/100130939-error-404-page-not-found-error-with-glitch-effect-on-screen-vector-illustration-for-your-design.jpg') }}"
+                    <img class="w-50 mx-auto my-3"
+                        src="{{ old('thumb', 'https://previews.123rf.com/images/kaymosk/kaymosk1804/kaymosk180400006/100130939-error-404-page-not-found-error-with-glitch-effect-on-screen-vector-illustration-for-your-design.jpg') }}"
                         alt="preview" id="image-preview">
                 </div>
                 <div class="col-4">
